@@ -1,0 +1,42 @@
+.work-card {
+    align-items: center;
+    display: flex;
+    padding: 5px 10px;
+    background-color: #3a3f58;
+    border-radius: 5px;
+    justify-content: center;
+    // margin-bottom: 10px;
+    flex-direction: column;
+    
+    .work-heading {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        h2 {
+
+            .company-name {
+                color: #ee6a59;
+                font-size: 20px;
+                text-transform: uppercase;
+            }
+            .work-duration {
+
+                color: #f9ac67;
+            }
+        }
+    }
+    .work-achievements {
+        background-color: #3a3f58;
+        border-top: solid 1px #fafafa;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        // visibility: hidden;
+        // margin-left: -15px;
+        // transform: translateY(-50px);
+
+        ul {
+            margin-left: -20px;
+        }
+        
+    }
+}

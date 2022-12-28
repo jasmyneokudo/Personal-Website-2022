@@ -1,0 +1,57 @@
+.card {
+        // min-width: 200px;
+        width: 350px;
+        height: auto;
+        border-bottom: solid 5px #DC143C;
+        position: relative;
+        animation-fill-mode: both;
+
+
+    img {
+        width: 350px;
+        height: 100%;
+        background-size: contain;
+        pointer-events: none;
+    }
+    .card-title {
+        position: absolute;
+        margin: 10px 20px;
+        font-size: 40px;
+        font-family: 'La Belle Aurore';
+        z-index: 100;
+    }
+    
+    .card-description {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        // animation: fadeIn 1s 1s;
+        // animation-fill-mode: forwards;
+        // transform: translateY(100px);
+        
+        opacity: 0;
+        
+    }
+
+        &:hover .card-description {
+            // transform: translateY(0);
+            // animation: fadeIn 1s 1s;
+            // animation-fill-mode: forwards;
+            transition:  all 0.3s ease-out;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 14px;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+            animation: fadeIn 1s 0s;
+            animation-fill-mode: forwards;
+
+        }
+    
+}
